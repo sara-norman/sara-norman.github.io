@@ -1,0 +1,274 @@
+header{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: transparent;
+}
+.landing {
+    display: fixed;
+    flex-direction: column;
+    padding: 15vh 50px;
+    margin: auto;
+    background-color: var(--random-color);
+    z-index: 0;
+    height: 100%;
+    position: fixed;
+}
+.landing-row {
+    display: flex;
+    height: 100vh;
+    padding: 96px 50px;
+    margin: auto;
+}
+
+/* Home Page */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.short-info {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.recent {
+    width: 60%;
+}
+.about {
+    width: 50%;
+}
+.contact {
+    width: 50%;
+}
+.work {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100vh;
+    z-index: 100;
+    background-color: white;
+}
+.work-title {
+    margin: 2rem 50px;
+}
+.project-nav {
+    padding: 0px 50px;
+    height: 72px;
+    border-top: 2px solid #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+    display: flex;
+}
+.project-filters {
+    display: flex;
+    padding-inline-start: 0px;
+}
+.project li {
+    padding-right: 16px;
+}
+.project-content {
+    width: 100%;
+    display: flex;
+    padding: 2rem 50px;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.project-details {
+    width: 50vw;
+    margin-right: 1rem;
+}
+.project-details-2 {
+    width: 50vw;
+    margin-left: 1rem;
+}
+.project-details picture {
+    padding-top: 3rem;
+  }
+.project-details-2 picture {
+    padding-bottom: 3rem;
+}
+.sticky {
+    position: fixed;
+  }
+
+/* Contact Page */
+.contact-page {
+    background-image: linear-gradient(
+        var(--random-color) 0% 70%,
+        transparent 70% 100%
+      );
+}
+.contact-landing {
+    flex-direction: column;
+    padding-left: 3em;
+}
+.contact-landing-buttons {
+    display: flex;
+    margin-top: 2rem;
+}
+.headshot {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+.blend {
+    mix-blend-mode: multiply;
+}
+.about-contact {
+    width: auto;
+    margin: 0rem 50px 3rem 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+.about-row {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+.contact-landing-buttons button:first-of-type {
+    margin-right: 1rem;
+}
+.contact-landing-buttons button:last-of-type{
+    margin-left: 1rem;
+}
+ul.skills:first-of-type{
+    margin-right: 1rem;
+}
+ul.skills:last-of-type{
+    margin-left: 1rem;
+}
+
+/* PROJECT */
+.project-page {
+    display: flex;
+    height: 75vh;
+    padding: 15vh 50px;
+    margin: auto;
+    background-color: var(--random-color);
+}
+.project-meta {
+    width: 33.33%;
+    padding-right: 1rem;
+}
+.project-description {
+    width: 66.66%;
+}
+.case-study {
+    padding: 4rem 0;
+    position: relative;
+}
+.case-study-text {
+    width: 66.66%;
+    padding: 4rem 50px;
+}
+.image-row {
+    display: flex;
+}
+.spacing {
+    margin-bottom: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1042px) {
+.about-row {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+.project-content {
+        flex-direction: column;
+    }
+.project-details-2 picture {
+        display: none;
+    }
+.project-details {
+        margin-right: 0;
+        width: 100%;
+    }
+.project-details-2 {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+.info {
+    flex-direction: column;
+}
+.recent {
+    width: 100%;
+}
+.short-info {
+    width: 100%;
+    margin-top: 1rem;
+}
+.recent p {
+    font-size: var(--size-1-2);
+ }
+header a {
+    font-size: var(--size-1-2);
+ }
+.mobile {
+    flex-direction: column;
+ }
+.contact-landing {
+     margin-top: 2em;
+}
+.headshot {
+    width: 200%;
+}
+.headshot {
+    display: none;
+}
+.contact-landing {
+     padding-left: 0em;
+ }
+.contact-page {
+    background-color: var(--random-color);
+}
+.contact-landing-buttons {
+    flex-direction: column;
+}
+.contact-landing-buttons button:first-of-type {
+    margin-right: 0rem;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.contact-landing-buttons button:last-of-type{
+    margin-left: 0rem;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.about-list {
+    flex-direction: column;
+}
+.project-page {
+    flex-direction: column;
+}
+.project-meta {
+    width: 100%;
+    padding-right: 0;
+}
+.project-description {
+    width: 100%;
+}
+}
+@media (max-width: 1630px) {
+
+    }
+@media (max-width: 674px) {
+ul.skills:first-of-type{
+    margin-right: 0rem;
+    }
+ul.skills:last-of-type{
+    margin-left: 0rem;
+    }
+ul.skills {
+    margin: 0;
+}
+}

@@ -1,0 +1,81 @@
+@import "./normalize.css";
+@import "./text-styles.css";
+@import "./nav.css";
+@import "./interactions.css";
+@import "./pages.css";
+
+:root {
+    --random-color: #FFC51C;
+  }
+* {
+    box-sizing: border-box;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+    padding-right: 25px;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.short-row {
+    width: 33.33%;
+    text-align: right;
+}
+.long-row {
+    width: 66.66%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+picture {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+.divider {
+    border-bottom: 2px solid #1a1a1a;
+}
+@media (max-width: 1628px) {
+
+}
+@media (max-width: 1042px) {
+.right {
+    padding-left: 0;
+    }
+@media (max-width: 1000px) {
+.left {
+        width: 100%;
+        padding: 0px;
+    }
+.right {
+        width: 100%;
+        padding: 24px 0px;
+    }
+    }
+.short-row {
+    width: 100%;
+    text-align: left;
+        }
+.long-row {
+    width: 100%;
+    justify-content: flex-start;
+    }
+}
+@media (max-width: 674px) {
+    .long-row {flex-direction: column;}
+    .none {
+        border-bottom: none;
+    }
+}

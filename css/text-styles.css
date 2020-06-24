@@ -1,0 +1,197 @@
+:root {
+    --base-font-size: 0.5rem;
+    --fluid-typography-ratio: 0.9;
+    --rem: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+    --size-1-1: calc(var(--rem) * 3);
+    --size-1-2: calc(var(--rem) * 1.5);
+    --size-1-3: calc(var(--rem) * 1.25);
+    --size-1-4: calc(var(--rem) * .8);
+    --size-1-5: calc(var(--rem) * .6);
+}
+@font-face {
+    font-family: Queens;
+    src: url(/assets/Queens/Web/Queens.woff);
+}
+h1 {
+    font-family: Work Sans;
+    font-size: var(--size-1-1);
+    line-height: 1.15;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.serif  {
+    font-family: Queens;
+    letter-spacing: 0.1rem;
+}
+.hover:hover {
+    font-family: Queens;
+    letter-spacing: 0.1rem;
+}
+h2 {
+    font-family: Work Sans;
+    font-size: var(--size-1-2);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+h3 {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    line-height: 1.75;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+h4 {
+    font-family: Queens;
+    font-size: var(--size-1-1);
+    line-height: 1.15;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-block-start: 1.75rem;
+    margin-block-end: 1rem;
+}
+h5 {
+    font-family: Queens;
+    font-size: var(--size-1-2);
+    line-height: 1.15;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+}
+p {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    line-height: 1.75;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+}
+
+a {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    font-weight: 400;
+    color: #1a1a1a;
+    text-decoration: none;
+ }
+a:hover {
+    color: var(--random-color);
+ }
+.info a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+ }
+.project-description a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+.queens {
+    font-family: Queens;
+    font-weight: 600;
+    font-size: var(--size-1-2);
+    letter-spacing: 0.1rem;
+ }
+li {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    line-height: 1.75;
+    font-weight: 400;
+    list-style: none;
+ }
+.tag {
+    font-family: Work Sans;
+    font-size: var(--size-1-4);
+    line-height: 1.75;
+    font-weight: 400;
+    list-style: none;
+    text-transform: uppercase;
+ }
+.big-link {
+    font-size: var(--size-1-2);
+ }
+.landing h1 {
+    padding-bottom: 2rem;
+}
+
+ /* Contact */
+
+ .caption {
+    font-family: Work Sans;
+    font-size: var(--size-1-5);
+    font-weight: 400;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    padding-top: 1em;
+ }
+ .about-list {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     padding-inline-start: 0px;
+ }
+ .about-list li {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1a1a1a;
+    display: flex;
+    border-top: 2px solid #1a1a1a;
+    padding: 1rem 2rem;
+}
+.skills li {
+    flex-direction: row;
+}
+.index-title {
+    opacity: 50%; 
+    margin-block-end: 0em;
+}
+
+/* Project Page */
+.project-meta ul {
+    padding-inline-start: 0px;
+}
+.meta {
+    font-size: var(--size-1-5);
+}
+
+/* Footer */
+.index li {
+    font-family: Work Sans;
+    font-size: var(--size-1-2);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 5rem;
+}
+.index li:hover {
+    color: var(--random-color);
+}
+.index li:hover::before {
+    color: #1a1a1a;
+}
+
+@media (max-width: 1000px) {
+.about-list li {
+    flex-direction: column;
+    padding: 1rem 0;
+    }
+.skills li {
+    flex-direction: row;
+    padding: 1rem 0;
+    }
+.project-meta ul {
+    display: flex;
+    }
+.project-meta li {
+    padding-right: 1rem;
+    }
+}
+
+@media (max-width: 674px) {
+
+}

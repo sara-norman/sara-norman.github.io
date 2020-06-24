@@ -1,0 +1,78 @@
+.floating-button {
+    position: absolute;
+    z-index: 5;
+    width: 5rem;
+    height: 5rem;
+    border: #1a1a1a solid 2px;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 50%;
+    top: 85vh;
+    right: 150px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: all 0.1s linear;
+    font-family: Work Sans;
+    font-size: var(--size-1-5);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  
+  .floating-button:hover {
+    margin-top: -30px;
+    background: #1a1a1a;
+    color: var(--random-color);
+  }
+  
+  .floating-button:active {
+    margin-top: -32px;
+    background: transparent;
+    color: #1a1a1a;
+  }
+  button {
+    width: 50%;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px #1a1a1a solid;
+    font-family: Work Sans;
+    font-size: var(--size-1-4);
+    padding: 2rem;
+    overflow: hidden;
+  }
+  button:hover {
+    color: var(--random-color);
+    background-color: #1a1a1a;
+  }
+  .about-list li:hover {
+    background-color: var(--random-color);
+    cursor: default;
+}
+
+/* .marquee {
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+  position: relative;
+}
+
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+} */
+
+  @media (max-width: 800px) {
+.floating-button {
+    right: 50px;
+}
+  }
+
+  /* 			<div class="marquee">
+				<h3>Atlanta Bread · 2019 · Atlanta Bread · 2019 · Atlanta Bread · 2019</h3>
+			</div>
