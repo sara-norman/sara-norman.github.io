@@ -2,18 +2,19 @@ header{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    background-color: transparent;
 }
 .landing {
-    display: fixed;
-    flex-direction: column;
     padding: 15vh 50px;
     margin: auto;
-    background-color: var(--random-color);
     z-index: 0;
     height: 100%;
     position: fixed;
+    background-color: var(--random-color);
 }
+.disappear {
+    transition: 2s;
+}
+
 .landing-row {
     display: flex;
     height: 100vh;

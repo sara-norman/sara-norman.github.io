@@ -101,6 +101,7 @@ li {
     line-height: 1.75;
     font-weight: 400;
     list-style: none;
+    color: #1a1a1a;
  }
 .tag {
     font-family: Work Sans;
@@ -116,17 +117,13 @@ li {
 .landing h1 {
     padding-bottom: 2rem;
 }
+.caption {
+    text-transform: none;
+    color: #999;
+}
 
  /* Contact */
 
- .caption {
-    font-family: Work Sans;
-    font-size: var(--size-1-5);
-    font-weight: 400;
-    color: #1a1a1a;
-    text-transform: uppercase;
-    padding-top: 1em;
- }
  .about-list {
      display: flex;
      flex-direction: column;
@@ -160,7 +157,7 @@ li {
 }
 
 /* Footer */
-.index li {
+.index-li {
     font-family: Work Sans;
     font-size: var(--size-1-2);
     line-height: 1.5;
