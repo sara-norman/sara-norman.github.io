@@ -33,15 +33,17 @@ header{
     justify-content: space-between;
     width: 50%;
 }
-.recent {
+.column1 {
     width: 60%;
 }
-.about {
+.column2 {
     width: 50%;
 }
-.contact {
+.column3 {
     width: 50%;
 }
+
+/*Second Section*/
 .work {
     display: flex;
     flex-direction: column;
@@ -50,9 +52,6 @@ header{
     z-index: 100;
     background-color: white;
 }
-.work-title {
-    margin: 2rem 50px;
-}
 .project-nav {
     padding: 0px 50px;
     height: 72px;
@@ -60,13 +59,12 @@ header{
     border-bottom: 2px solid #1a1a1a;
     display: flex;
 }
-.project-filters {
-    display: flex;
-    padding-inline-start: 0px;
-}
-.project li {
-    padding-right: 16px;
-}
+.project.struck .project-nav {
+    position: sticky;
+    right: 0;
+    left: 0;
+    background-color: white;
+  }
 .project-content {
     width: 100%;
     display: flex;
@@ -76,80 +74,85 @@ header{
 }
 .project-details {
     width: 50vw;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
-.project-details-2 {
-    width: 50vw;
-    margin-left: 1rem;
+.hide {
+    display: none;
+}
+.now-hide {
+    display: inherit;
+}
+.more {
+    margin-left: 1.5rem;
 }
 .project-details picture {
     padding-top: 3rem;
   }
-.project-details-2 picture {
+.more picture {
+    padding-top: 0rem;
     padding-bottom: 3rem;
 }
-.sticky {
-    position: fixed;
-  }
 
-/* Contact Page */
-.contact-page {
-    background-image: linear-gradient(
-        var(--random-color) 0% 70%,
-        transparent 70% 100%
-      );
-}
-.contact-landing {
-    flex-direction: column;
-    padding-left: 3em;
-}
-.contact-landing-buttons {
-    display: flex;
-    margin-top: 2rem;
-}
-.headshot {
-    width: 100%;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    mix-blend-mode: multiply;
-}
-.blend {
-    mix-blend-mode: multiply;
-}
-.about-contact {
-    width: auto;
-    margin: 0rem 50px 3rem 50px;
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0;
-}
-.about-row {
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    margin-bottom: 4rem;
-}
-.contact-landing-buttons button:first-of-type {
-    margin-right: 1rem;
-}
-.contact-landing-buttons button:last-of-type{
-    margin-left: 1rem;
-}
-ul.skills:first-of-type{
-    margin-right: 1rem;
-}
-ul.skills:last-of-type{
-    margin-left: 1rem;
+/* Home Page Responsive */
+@media (max-width: 1042px) {
+    .project-content {
+            flex-direction: column;
+        }
+    .more picture {
+        display: none;
+        }
+    .special picture {
+        display: inherit;
+        }
+    .special picture {
+        padding-bottom: .5rem;
+        }
+    .project-details {
+            margin-right: 0;
+            width: 100%;
+        }
+    .project-details picture {
+            padding-top: 2rem;
+        }
+    .more {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+
+@media (max-width: 1000px) {
+    .project-content {
+        margin-bottom: 3rem;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .column1 {
+        width: 100%;
+    }
+    .short-info {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .hide {
+        display: inherit;
+    }
+    .now-hide {
+        display: none;
+    }
 }
 
-/* PROJECT */
-.project-page {
+/*-------------------------------------------*/
+/*Project Page ✅ */
+/*First Section*/
+.project-landing {
     display: flex;
-    height: 75vh;
-    padding: 15vh 50px;
+    padding: 125px 50px;
     margin: auto;
+    z-index: 0;
+    height: 100%;
+    position: fixed;
     background-color: var(--random-color);
 }
 .project-meta {
@@ -159,117 +162,176 @@ ul.skills:last-of-type{
 .project-description {
     width: 66.66%;
 }
+
+/*Second Section*/
 .case-study {
-    padding: 4rem 0;
     position: relative;
+    z-index: 100;
+    background-color: white;
+    margin-top: 75vh;
 }
-.case-study-text {
+.text {
     width: 66.66%;
     padding: 4rem 50px;
 }
 .image-row {
     display: flex;
+    align-items: center;
 }
-.spacing {
-    margin-bottom: 1.5rem;
+.first {
+    padding-top: 96px;
+}
+.image-left {
+    width: 50vw;
+    margin-right: 1.5rem;
+}
+.image-right {
+    width: 50vw;
+    margin-left: 1.5rem; 
 }
 
-/* RESPONSIVE */
+/* Project Page Responsive */
 @media (max-width: 1042px) {
-.about-row {
+    .image-right {
+        padding-left: 0;
+}
+@media (max-width: 1000px) { 
+    .project-landing {
         flex-direction: column;
-        margin-bottom: 2rem;
     }
-.project-content {
+    .project-meta {
+        width: 100%;
+        padding-right: 0;
+    }
+    .project-description {
+        width: 100%;
+    }
+    .image-row {
         flex-direction: column;
     }
-.project-details-2 picture {
-        display: none;
-    }
-.project-details {
+    .image-left {
+        width: 100%;
         margin-right: 0;
-        width: 100%;
+        margin-bottom: 1.5rem;
     }
-.project-details-2 {
+    .image-right {
+        width: 100%;
         margin-left: 0;
-        width: 100%;
-        margin-top: 1rem;
     }
+}
+}
+
+/*-------------------------------------------*/
+/* CONTACT PAGE ✅ */
+/*First Section*/
+.contact-page {
+    padding-top: 5vh;
+    mix-blend-mode: multiply;
+}
+.headshot {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+.landing-contact {
+    background-image: linear-gradient(
+        var(--random-color) 0vh 75vh,
+        transparent 74.25% 100%
+      );
+    z-index: 0;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    padding: 96px 50px;
+    margin: auto;
+}
+.landing-text {
+    flex-direction: column;
+    padding-left: 3em;
+}
+.landing-buttons{
+    display: flex;
+    margin-top: 2rem;
+}
+.landing-buttons button:first-of-type {
+    margin-right: 1rem;
+}
+.landing-buttons button:last-of-type{
+    margin-left: 1rem;
+}
+
+/*Second Section*/
+.contact-about {
+    z-index: 100;
+    margin-top: 100vh;
+    position: relative;
+    background-color: white;
+}
+.contact-info {
+    width: auto;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+.info-row {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+.info-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+.info-list li:hover {
+    background-color: var(--random-color);
+    cursor: default;
+}
+
+
+/* Contact Page Responsive */
+@media (max-width: 1042px) {
+    .info-row {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
 }
 
 @media (max-width: 1000px) {
-.info {
-    flex-direction: column;
-}
-.recent {
-    width: 100%;
-}
-.short-info {
-    width: 100%;
-    margin-top: 1rem;
-}
-.recent p {
-    font-size: var(--size-1-2);
- }
-header a {
-    font-size: var(--size-1-2);
- }
-.mobile {
-    flex-direction: column;
- }
-.contact-landing {
-     margin-top: 2em;
-}
-.headshot {
-    width: 200%;
-}
-.headshot {
-    display: none;
-}
-.contact-landing {
+ .contact-landing {
+        margin-top: 2em;
      padding-left: 0em;
- }
+    }
+.headshot {
+        display: none;
+    }
 .contact-page {
-    background-color: var(--random-color);
-}
-.contact-landing-buttons {
-    flex-direction: column;
-}
-.contact-landing-buttons button:first-of-type {
-    margin-right: 0rem;
-    width: 100%;
-    margin: 0.5rem 0;
-}
-.contact-landing-buttons button:last-of-type{
-    margin-left: 0rem;
-    width: 100%;
-    margin: 0.5rem 0;
-}
-.about-list {
-    flex-direction: column;
-}
-.project-page {
-    flex-direction: column;
-}
-.project-meta {
-    width: 100%;
-    padding-right: 0;
-}
-.project-description {
-    width: 100%;
-}
-}
-@media (max-width: 1630px) {
-
+        background-color: var(--random-color);
     }
-@media (max-width: 674px) {
-ul.skills:first-of-type{
-    margin-right: 0rem;
+.landing-buttons {
+        flex-direction: column;
     }
-ul.skills:last-of-type{
-    margin-left: 0rem;
+.landing-buttons button:first-of-type {
+        margin-right: 0rem;
+        width: 100%;
+        margin: 0.5rem 0;
     }
-ul.skills {
-    margin: 0;
+.landing-buttons button:last-of-type{
+        margin-left: 0rem;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+.info-list {
+        flex-direction: column;
+    }
+.landing-text {
+        padding-left: 0em;
+    }
 }
 }

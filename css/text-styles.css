@@ -12,6 +12,9 @@
     font-family: Queens;
     src: url(/assets/Queens/Web/Queens.woff);
 }
+
+/*-------------------------------------------*/
+/*Headings ✅ */
 h1 {
     font-family: Work Sans;
     font-size: var(--size-1-1);
@@ -21,13 +24,8 @@ h1 {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-.serif  {
-    font-family: Queens;
-    letter-spacing: 0.1rem;
-}
-.hover:hover {
-    font-family: Queens;
-    letter-spacing: 0.1rem;
+header h1{ 
+    padding-bottom: 2rem;
 }
 h2 {
     font-family: Work Sans;
@@ -61,6 +59,9 @@ h5 {
     margin-block-start: 0rem;
     margin-block-end: 1rem;
 }
+
+/*-------------------------------------------*/
+/*Text Styles ✅ */
 p {
     font-family: Work Sans;
     font-size: var(--size-1-3);
@@ -70,7 +71,6 @@ p {
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
 }
-
 a {
     font-family: Work Sans;
     font-size: var(--size-1-3);
@@ -81,28 +81,24 @@ a {
 a:hover {
     color: var(--random-color);
  }
-.info a:hover {
-    color: #1a1a1a;
-    text-decoration: underline;
- }
-.project-description a:hover {
-    color: #1a1a1a;
-    text-decoration: underline;
+
+/*-------------------------------------------*/
+ /* Special ✅ */
+.serif  {
+    font-family: Queens;
+    letter-spacing: 0.1rem;
 }
-.queens {
+.hover:hover {
+    font-family: Queens;
+    letter-spacing: 0.1rem;
+}
+.princess {
     font-family: Queens;
     font-weight: 600;
     font-size: var(--size-1-2);
     letter-spacing: 0.1rem;
  }
-li {
-    font-family: Work Sans;
-    font-size: var(--size-1-3);
-    line-height: 1.75;
-    font-weight: 400;
-    list-style: none;
-    color: #1a1a1a;
- }
+
 .tag {
     font-family: Work Sans;
     font-size: var(--size-1-4);
@@ -111,59 +107,66 @@ li {
     list-style: none;
     text-transform: uppercase;
  }
-.big-link {
-    font-size: var(--size-1-2);
- }
-.landing h1 {
-    padding-bottom: 2rem;
-}
 .caption {
     text-transform: none;
     color: #999;
 }
-
- /* Contact */
-
- .about-list {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     padding-inline-start: 0px;
+.big-link {
+    font-size: var(--size-1-2);
  }
- .about-list li {
+
+
+/*-------------------------------------------*/
+ /*Lists ✅ */
+li {
     font-family: Work Sans;
     font-size: var(--size-1-3);
-    line-height: 1.5;
+    line-height: 1.75;
     font-weight: 400;
+    list-style: none;
     color: #1a1a1a;
+ }
+
+/*-------------------------------------------*/
+/*PAGE SPECIFIC*/
+/* Navigation */
+nav li {
+    list-style: none;
+    padding: 18px;
+    text-align: right;
     display: flex;
-    border-top: 2px solid #1a1a1a;
-    padding: 1rem 2rem;
-}
-.skills li {
-    flex-direction: row;
-}
-.index-title {
-    opacity: 50%; 
-    margin-block-end: 0em;
-}
-
-/* Project Page */
-.project-meta ul {
-    padding-inline-start: 0px;
-}
-.meta {
-    font-size: var(--size-1-5);
+    align-items: center;
+ }
+nav li {
+     color: white
+ }
+nav a:hover {
+    text-decoration: underline;
+    color: #1a1a1a;
 }
 
-/* Footer */
+/*Footer*/
+.index ul{
+    padding-inline-start: 0;
+}
+.index li {
+    display: inline;
+}
+.index li::before {
+    content: "·";
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.index li:first-of-type::before{
+    content: none;
+}
 .index-li {
     font-family: Work Sans;
     font-size: var(--size-1-2);
-    line-height: 1.5;
     font-weight: 400;
     color: #1a1a1a;
-    line-height: 5rem;
+    line-height: 2.5;
+    display: inline;
 }
 .index li:hover {
     color: var(--random-color);
@@ -172,13 +175,67 @@ li {
     color: #1a1a1a;
 }
 
+/*Home */
+.project-content ul {
+    display: flex;
+    padding-inline-start: 0px;
+}
+.project li {
+    padding-right: 16px;
+} 
+
+/* Contact ✅ */
+.index-title {
+    opacity: 50%; 
+    margin-block-end: 0em;
+}
+ul.skills:first-of-type{
+    margin-right: 1rem;
+}
+ul.skills:last-of-type{
+    margin-left: 1rem;
+}
+.info-list li {
+    font-family: Work Sans;
+    font-size: var(--size-1-3);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1a1a1a;
+    display: flex;
+    border-top: 2px solid #1a1a1a;
+    padding: 1rem 2rem;
+ }
+ .skills li {
+    flex-direction: row;
+ }
+
+/* Project Page ✅ */
+.meta {
+    font-size: var(--size-1-5);
+}
+.project-meta ul {
+    padding-inline-start: 0px;
+}
+.project-description a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+.text a {
+    line-height: 3;
+}
+.text a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------*/
+/*Responsive*/
 @media (max-width: 1000px) {
+header h1 {
+    padding-bottom: 0rem;
+}
 .about-list li {
     flex-direction: column;
-    padding: 1rem 0;
-    }
-.skills li {
-    flex-direction: row;
     padding: 1rem 0;
     }
 .project-meta ul {
@@ -187,8 +244,49 @@ li {
 .project-meta li {
     padding-right: 1rem;
     }
+.column1 p {
+    font-size: var(--size-1-2);
+  }
+header a {
+    font-size: var(--size-1-2);
+ }
+.meta {
+    font-size: var(--size-1-3);
 }
-
+.tag {
+    font-size: var(--size-1-3);
+}
+button {
+    font-size: var(--size-1-3);
+}
+.index-li {
+    line-height: 2;
+}
+.index li::before {
+    content: "•";
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.info-list li {
+    flex-direction: column;
+    padding: 1rem 0rem;
+ }
+.skills li {
+    flex-direction: row;
+    padding: 1rem 0;
+    }
+.info-list .short-row {
+    font-style: italic;
+}
+}
 @media (max-width: 674px) {
-
-}
+    ul.skills:first-of-type{
+        margin-right: 0rem;
+        }
+    ul.skills:last-of-type{
+        margin-left: 0rem;
+        }
+    ul.skills {
+        margin: 0;
+    }
+ }
