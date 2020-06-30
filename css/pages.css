@@ -90,6 +90,7 @@
 }
 .hide {
     display: none;
+    margin-top: 0;
 }
 .now-hide {
     display: inherit;
@@ -134,6 +135,13 @@
     }
 
 @media (max-width: 1000px) {
+    .project-nav { 
+        height: 6rem;
+    }
+    .home-text {
+        height: 50vh;
+        padding: 10rem 50px
+    }
     .home-text-left {
         width: 100%;
     }
@@ -163,20 +171,15 @@
     .now-hide {
         display: none;
     }
-}
-@media (max-width: 675px) {
-.home-text {
-    height: 50vh;
-}
-.info {
-    flex-direction: column;
-}
-.column1 {
-    width: 100%;
-}
-.short-info {
-    width: 100%;
-}
+    .info {
+        flex-direction: column;
+    }
+    .column1 {
+        width: 100%;
+    }
+    .short-info {
+        width: 100%;
+    }
 }
 /*-------------------------------------------*/
 /*Project Page ✅ */

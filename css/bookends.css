@@ -37,7 +37,10 @@ footer {
     border-top: 2px #1a1a1a solid;
     display: flex;
 }
-@media (max-width: 675px) {
+@media (max-width: 1000px) {
+nav {
+    height: 6rem;
+    }
 .footer-bottom {
     padding: 0rem 50px;
 }

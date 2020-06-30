@@ -19,7 +19,7 @@
 /*Headings ✅ */
 h1 {
     font-family: Work Sans;
-    font-size: var(--size-1-1);
+    font-size: 5vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -28,14 +28,14 @@ h1 {
 }
 h2 {
     font-family: Work Sans;
-    font-size: var(--size-1-2);
+    font-size: 2vw;
     line-height: 1.5;
     font-weight: 400;
     color: #1a1a1a;
 }
 h3 {
     font-family: Work Sans;
-    font-size: var(--size-1-3);
+    font-size: 1.5vw;
     line-height: 1.75;
     font-weight: 400;
     color: #1a1a1a;
@@ -58,12 +58,23 @@ h5 {
     margin-block-start: 0rem;
     margin-block-end: 1rem;
 }
+@media (max-width: 1000px) { 
+    h1 {
+        font-size: 9vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+}
 
 /*-------------------------------------------*/
 /*Text Styles ✅ */
 p {
     font-family: Work Sans;
-    font-size: var(--size-1-3);
+    font-size: 1.75vw;
     line-height: 1.75;
     font-weight: 400;
     color: #1a1a1a;
@@ -72,7 +83,8 @@ p {
 }
 a {
     font-family: Work Sans;
-    font-size: var(--size-1-3);
+    font-size: 1.75vw;
+    line-height: 1.75;
     font-weight: 400;
     color: #1a1a1a;
     text-decoration: none;
@@ -93,6 +105,36 @@ sup {
     font-weight: 800;
     top: 0;
 }
+.footer-bottom a {
+    font-size: 1.5vw;
+}
+
+@media (min-width: 1000px) { 
+    header p {
+        font-size: 1vw;
+        line-height: 1.25;
+    }
+    header a {
+        font-size: 1vw;
+        line-height: 1.25;
+    }
+}
+@media (max-width: 1000px) { 
+    p {
+        font-size: 4vw;
+        line-height: 1.5;
+    }
+    a {
+        font-size: 4vw;
+        line-height: 1.5;
+    }
+    .project-details p {
+        padding: 2rem 0;
+    }
+    .footer-bottom a {
+        font-size: 3vw;
+    }
+}
 
 /*-------------------------------------------*/
  /* Special ✅ */
@@ -106,13 +148,13 @@ sup {
 }
 .princess {
     font-family: Queens;
-    font-size: var(--size-1-7);
+    font-size: 1.5vw;
     color: #aaa;
     letter-spacing: 0.1rem;
  }
 .tag {
     font-family: Work Sans;
-    font-size: var(--size-1-4);
+    font-size: 1vw;
     line-height: 1.75;
     font-weight: 400;
     list-style: none;
@@ -123,7 +165,17 @@ sup {
     color: #999;
 }
 .big-link {
-    font-size: var(--size-1-2);
+    font-size: 2vw;
+ }
+ @media (max-width: 1000px) { 
+    .princess {
+        font-size: 4vw;}
+    .tag {
+        font-size: 3.25vw;
+    }
+    .big-link {
+        font-size: 5vw;
+     }
  }
 
 
@@ -131,11 +183,16 @@ sup {
  /*Lists ✅ */
 li {
     font-family: Work Sans;
-    font-size: var(--size-1-3);
+    font-size: 1.75vw;
     line-height: 1.75;
     font-weight: 400;
     list-style: none;
     color: #1a1a1a;
+ }
+ @media (max-width: 1000px) { 
+    li {
+        font-size: 3vw;
+    }
  }
 
 /*-------------------------------------------*/
@@ -182,7 +239,7 @@ nav a:hover {
 /*Home */
 .home-landing h1 {
     font-family: Work Sans;
-    font-size: var(--size-1-6);
+    font-size: 5vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -203,20 +260,20 @@ nav a:hover {
     color: #1a1a1a;
     text-decoration: underline;
 }
-.columns p {
-    font-size: var(--size-1-4);
-    line-height: 2rem;
-}
-.short-info li a {
-    font-size: var(--size-1-4);
-}
+
 .short-info li {
-    line-height: 1.25;
-    line-height: 2rem;
+    line-height: 1;
 }
 .columns h4 {
     margin-block-end: 0.5rem;
 }
+@media (max-width: 1000px) { 
+    .home-landing h1 {
+        padding: 2rem 0;
+        font-size: 9vw;
+    }
+}
+
 
 /* Contact ✅ */
 .index-title {
@@ -265,9 +322,6 @@ ul.skills:last-of-type{
 /*-------------------------------------------*/
 /*Responsive*/
 @media (max-width: 1000px) {
-header h1 {
-    padding-bottom: 0rem;
-}
 .about-list li {
     flex-direction: column;
     padding: 1rem 0;
@@ -278,13 +332,7 @@ header h1 {
 .project-meta li {
     padding-right: 1rem;
     }
-header a {
-    font-size: var(--size-1-2);
- }
 .meta {
-    font-size: var(--size-1-3);
-}
-.tag {
     font-size: var(--size-1-3);
 }
 button {
@@ -308,25 +356,14 @@ button {
 .info-list .short-row {
     font-style: italic;
 }
+ul.skills:first-of-type{
+    margin-right: 0rem;
+    }
+ul.skills:last-of-type{
+    margin-left: 0rem;
+    }
+ul.skills {
+    margin: 0;
 }
-@media (max-width: 674px) {
-    ul.skills:first-of-type{
-        margin-right: 0rem;
-        }
-    ul.skills:last-of-type{
-        margin-left: 0rem;
-        }
-    ul.skills {
-        margin: 0;
-    }
-    .columns p {
-        font-size: var(--size-1-3);
-        line-height: 1.25;
-    }
-    .short-info li a {
-        font-size: var(--size-1-3);
-    }
-    .short-info li {
-        line-height: 1.75;
-    }
- }
+
+}
