@@ -139,7 +139,7 @@
         height: 6rem;
     }
     .home-text {
-        height: 100vh;
+        height: 55vh;
         padding: 10rem 50px
     }
     .home-text-left {
@@ -170,6 +170,15 @@
     }
     .now-hide {
         display: none;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .column1 {
+        width: 100%;
+    }
+    .short-info {
+        width: 100%;
     }
 }
 /*-------------------------------------------*/
