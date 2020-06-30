@@ -61,8 +61,11 @@ img {
   
 picture {
     display: block;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
+}
+.fullscreen {
+    max-width: 95%;
 }
 
 /*Responsive*/
