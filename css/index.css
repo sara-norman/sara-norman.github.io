@@ -61,7 +61,7 @@ img {
   
 picture {
     display: block;
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -72,11 +72,11 @@ picture {
     }
 @media (max-width: 1000px) {
 .left {
-        width: 100%;
+        width: 75%;
         padding: 0px;
     }
 .right {
-        width: 100%;
+        width: 25%;
         padding: 24px 0px;
     }
     }
@@ -104,5 +104,8 @@ picture {
 }@media (max-width: 1000px) {
 .mobile {
     flex-direction: column;
+ }
+ picture{ 
+     max-width: 100%;
  }
 }

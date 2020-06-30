@@ -4,6 +4,7 @@
     width: 5rem;
     height: 5rem;
     border: #1a1a1a solid 2px;
+    background-color: var(--random-color);;
     text-align: center;
     font-size: 2em;
     border-radius: 50%;
@@ -35,8 +36,6 @@
     background: transparent;
     color: #1a1a1a;
   }
-
-
   button {
     width: 50%;
     background-color: transparent;

@@ -7,6 +7,8 @@
     --size-1-3: calc(var(--rem) * 1.25);
     --size-1-4: calc(var(--rem) * .8);
     --size-1-5: calc(var(--rem) * .6);
+    --size-1-6: calc(var(--rem) * 4);
+    --size-1-7: calc(var(--rem) * .9);
 }
 @font-face {
     font-family: Queens;
@@ -23,9 +25,6 @@ h1 {
     color: #1a1a1a;
     margin-block-start: 0px;
     margin-block-end: 0px;
-}
-header h1{ 
-    padding-bottom: 2rem;
 }
 h2 {
     font-family: Work Sans;
@@ -81,6 +80,19 @@ a {
 a:hover {
     color: var(--random-color);
  }
+a:active {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+.info a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+sup {
+    font-family: Queens;
+    font-weight: 800;
+    top: 0;
+}
 
 /*-------------------------------------------*/
  /* Special ✅ */
@@ -94,11 +106,10 @@ a:hover {
 }
 .princess {
     font-family: Queens;
-    font-weight: 600;
-    font-size: var(--size-1-2);
+    font-size: var(--size-1-7);
+    color: #aaa;
     letter-spacing: 0.1rem;
  }
-
 .tag {
     font-family: Work Sans;
     font-size: var(--size-1-4);
@@ -130,15 +141,8 @@ li {
 /*-------------------------------------------*/
 /*PAGE SPECIFIC*/
 /* Navigation */
-nav li {
-    list-style: none;
-    padding: 18px;
-    text-align: right;
-    display: flex;
-    align-items: center;
- }
-nav li {
-     color: white
+nav li:first-of-type {
+    padding-right: 2rem;
  }
 nav a:hover {
     text-decoration: underline;
@@ -151,11 +155,7 @@ nav a:hover {
 }
 .index li {
     display: inline;
-}
-.index li::before {
-    content: "·";
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1.5rem;
 }
 .index li:first-of-type::before{
     content: none;
@@ -165,7 +165,7 @@ nav a:hover {
     font-size: var(--size-1-2);
     font-weight: 400;
     color: #1a1a1a;
-    line-height: 2.5;
+    line-height: 2;
     display: inline;
 }
 .index li:hover {
@@ -174,8 +174,24 @@ nav a:hover {
 .index li:hover::before {
     color: #1a1a1a;
 }
+.footer-bottom a:hover{
+    color: #1a1a1a;
+    text-decoration: underline;
+}
 
 /*Home */
+.home-landing h1 {
+    font-family: Work Sans;
+    font-size: var(--size-1-6);
+    line-height: 1.15;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.home-text h2{
+    margin-block-end: 0em;
+}
 .project-content ul {
     display: flex;
     padding-inline-start: 0px;
@@ -183,6 +199,24 @@ nav a:hover {
 .project li {
     padding-right: 16px;
 } 
+.home-text a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+.columns p {
+    font-size: var(--size-1-4);
+    line-height: 2rem;
+}
+.short-info li a {
+    font-size: var(--size-1-4);
+}
+.short-info li {
+    line-height: 1.25;
+    line-height: 2rem;
+}
+.columns h4 {
+    margin-block-end: 0.5rem;
+}
 
 /* Contact ✅ */
 .index-title {
@@ -244,9 +278,6 @@ header h1 {
 .project-meta li {
     padding-right: 1rem;
     }
-.column1 p {
-    font-size: var(--size-1-2);
-  }
 header a {
     font-size: var(--size-1-2);
  }
@@ -263,7 +294,6 @@ button {
     line-height: 2;
 }
 .index li::before {
-    content: "•";
     padding-right: .5rem;
     padding-left: .5rem;
 }
@@ -288,5 +318,15 @@ button {
         }
     ul.skills {
         margin: 0;
+    }
+    .columns p {
+        font-size: var(--size-1-3);
+        line-height: 1.25;
+    }
+    .short-info li a {
+        font-size: var(--size-1-3);
+    }
+    .short-info li {
+        line-height: 1.75;
     }
  }
