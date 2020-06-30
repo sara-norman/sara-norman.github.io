@@ -139,7 +139,7 @@
         height: 6rem;
     }
     .home-text {
-        height: 55vh;
+        height: 50vh;
         padding: 10rem 50px
     }
     .home-text-left {
@@ -372,7 +372,7 @@
 
 @media (max-width: 1000px) {
  .contact-landing {
-        margin-top: 2em;
+    margin-top: 2em;
      padding-left: 0em;
     }
 .headshot {
