@@ -171,15 +171,6 @@
     .now-hide {
         display: none;
     }
-    .info {
-        flex-direction: column;
-    }
-    .column1 {
-        width: 100%;
-    }
-    .short-info {
-        width: 100%;
-    }
 }
 /*-------------------------------------------*/
 /*Project Page ✅ */
