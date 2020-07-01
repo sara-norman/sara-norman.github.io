@@ -23,7 +23,7 @@
     height: 100%;
     position: fixed;
     background-color: var(--random-color);
-    -webkit-transform: translateZ(0);
+    top: 0;
 }
 
 /*Rows*/
