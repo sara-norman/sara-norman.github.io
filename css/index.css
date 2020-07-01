@@ -70,46 +70,39 @@ picture {
 }
 
 /*Responsive*/
-@media (max-width: 1042px) {
-.right {
-    padding-left: 0;
-    }
 @media (max-width: 1000px) {
 .left {
-        width: 75%;
-        padding: 0px;
+    width: 75%;
+    padding: 0px;
     }
 .right {
-        width: 25%;
-        padding: 24px 0px;
-    }
+    width: 25%;
+    padding: 0px;
     }
 .short-row {
     width: 100%;
     text-align: left;
-        }
+    }
 .long-row {
     width: 100%;
     justify-content: flex-start;
     }
+.mobile {
+    flex-direction: column;
+    }
+.fullscreen {
+    max-width: 100%;
+    }
+.mobile {
+    flex-direction: column;
+    }
+ picture{ 
+    max-width: 100%;
+    }
+.long-row {
+    flex-direction: column;
+    }
+.none {
+    border-bottom: none;
+    }
 }
-@media (max-width: 1000px) {
-    .mobile {
-        flex-direction: column;
-     }
-     .fullscreen {
-        max-width: 100%;
-    }
-    .mobile {
-        flex-direction: column;
-     }
-     picture{ 
-         max-width: 100%;
-     }
-     .long-row {
-        flex-direction: column;
-    }
-     .none {
-            border-bottom: none;
-        }
-    }
