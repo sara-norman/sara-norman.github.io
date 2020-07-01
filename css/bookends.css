@@ -16,10 +16,10 @@ nav {
 }
 .nav-content {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding: 0px 50px;
     width: 100%;
-    align-content: center;
+    align-content: baseline;
 }
 
 /* Footer */
