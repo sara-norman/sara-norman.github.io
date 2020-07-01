@@ -131,6 +131,9 @@ sup {
     .project-details p {
         padding: 2rem 0;
     }
+    .hidden-content p {
+        padding: .5rem;
+    }
     .footer-bottom a {
         font-size: 3vw;
     }
