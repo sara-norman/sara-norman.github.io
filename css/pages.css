@@ -109,37 +109,15 @@
 /* Home Page Responsive */
 
 @media (max-width: 1000px) {
-.project-content {
-        flex-direction: column;
-        margin-bottom: 3rem;
-    }
-.more picture {
-    display: none;
-    }
-.special picture {
-    display: inherit;
-    }
-.special picture {
-    padding-bottom: .5rem;
-    }
-.project-details {
-        margin-right: 0;
-        width: 100%;
-    }
-.project-details picture {
-        padding-top: 2rem;
-    }
-.more {
-        margin-left: 0;
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .project-nav { 
-        height: 6rem;
+.columns {
+        display: none;
     }
     .home-text {
-        height: 60vh;
+        height: 80vh;
         padding: 10rem 50px
+    }
+    .work {
+        margin-top: 70vh;
     }
     .home-text-left {
         width: 100%;
@@ -168,14 +146,35 @@
     .now-hide {
         display: none;
     }
-    .info {
+
+/*Second Half*/
+.project-content {
         flex-direction: column;
+        margin-bottom: 3rem;
+}
+.more picture {
+    display: none;
     }
-    .column1 {
+.special picture {
+    display: inherit;
+    }
+.special picture {
+    padding-bottom: .5rem;
+    }
+.project-details {
+        margin-right: 0;
         width: 100%;
     }
-    .short-info {
+.project-details picture {
+        padding-top: 2rem;
+    }
+.more {
+        margin-left: 0;
         width: 100%;
+        margin-top: 1rem;
+    }
+    .project-nav { 
+        height: 6rem;
     }
 }
 /*-------------------------------------------*/
