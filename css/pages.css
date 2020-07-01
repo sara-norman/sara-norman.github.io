@@ -243,12 +243,9 @@
 }
 
 /* Project Page Responsive */
-@media (max-width: 1042px) {
-    .image-right {
-        padding-left: 0;
-}
 @media (max-width: 1000px) { 
     .project-landing {
+        padding: 10rem 50px;
         flex-direction: column;
     }
     .project-meta {
@@ -277,9 +274,12 @@
     }
     .stacked .image-left  {
         margin-bottom: 0rem;
+    }
+    .image-right {
+        padding-left: 0;
+    }
 }
-}
-}
+
 
 /*-------------------------------------------*/
 /* CONTACT PAGE ✅ */
@@ -366,14 +366,10 @@
 
 
 /* Contact Page Responsive */
-@media (max-width: 1042px) {
-    .info-row {
-            flex-direction: column;
-            margin-bottom: 2rem;
-        }
-}
-
 @media (max-width: 1000px) {
+.landing-contact {
+    padding: 10rem 50px;
+    }   
  .landing-text {
     margin-left: 0%;
     }
@@ -403,8 +399,10 @@
 .info-list {
         flex-direction: column;
     }
+.info-row {
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
-@media (max-width: 675px) {
 #about {
     padding-top: 96px;
 }
