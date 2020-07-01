@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 /*sections*/
-header{
+.header{
     display: flex;
     flex-direction: column;
     max-width: 100%;
