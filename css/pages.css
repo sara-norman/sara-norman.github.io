@@ -6,6 +6,8 @@
     height: 100%;
     position: fixed;
     background-color: white;
+    -webkit-transform: translate3d(0,0,0);
+
 }
 .home-text {
     padding: 7em 50px;
@@ -188,6 +190,8 @@
     height: 100%;
     position: fixed;
     background-color: var(--random-color);
+    -webkit-transform: translate3d(0,0,0);
+
 }
 .project-meta {
     width: 33.33%;
@@ -314,7 +318,8 @@
     display: flex;
     padding: 7rem 50px;
     margin: auto;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+
 }
 .landing-text {
     flex-direction: column;
