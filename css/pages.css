@@ -314,6 +314,7 @@
     display: flex;
     padding: 7rem 50px;
     margin: auto;
+    -webkit-transform: translateZ(0);
 }
 .landing-text {
     flex-direction: column;
