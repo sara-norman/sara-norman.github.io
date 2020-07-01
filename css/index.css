@@ -93,9 +93,6 @@ picture {
 .fullscreen {
     max-width: 100%;
     }
-.mobile {
-    flex-direction: column;
-    }
  picture{ 
     max-width: 100%;
     }
