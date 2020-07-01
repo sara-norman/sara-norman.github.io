@@ -8,7 +8,7 @@
     background-color: white;
 }
 .home-text {
-    padding: 125px 50px;
+    padding: 7em 50px;
     height: 65vh;
     background-color: var(--random-color);
 }
@@ -182,7 +182,7 @@
 /*First Section*/
 .project-landing {
     display: flex;
-    padding: 125px 50px;
+    padding: 7rem 50px;
     margin: auto;
     z-index: 0;
     height: 100%;
@@ -285,7 +285,6 @@
 /* CONTACT PAGE ✅ */
 /*First Section*/
 .contact-page {
-    padding-top: 5vh;
     mix-blend-mode: multiply;
 }
 .headshot {
@@ -313,7 +312,7 @@
     height: 100%;
     position: fixed;
     display: flex;
-    padding: 96px 50px;
+    padding: 7rem 50px;
     margin: auto;
 }
 .landing-text {
