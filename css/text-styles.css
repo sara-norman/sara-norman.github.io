@@ -305,6 +305,7 @@ nav a:hover {
 @media (max-width: 1000px) { 
     .home-landing h1 {
         font-size: 12vw;
+        line-height: 1;
     }
     .project-content ul {
         margin-block-end: 0;
