@@ -19,7 +19,7 @@
 /*Headings ✅ */
 h1 {
     font-family: Work Sans;
-    font-size: 5vw;
+    font-size: 4.25vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -42,7 +42,7 @@ h3 {
 }
 h4 {
     font-family: Queens;
-    font-size: var(--size-1-1);
+    font-size: 4vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -51,7 +51,7 @@ h4 {
 }
 h5 {
     font-family: Queens;
-    font-size: var(--size-1-2);
+    font-size: 2vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -63,10 +63,16 @@ h5 {
         font-size: 9vw;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     h3 {
-        font-size: 3vw;
+        font-size: 4.5vw;
+    }
+    h4 {
+        font-size: 12vw;
+    }
+    h5 {
+        font-size: 4.5vw;
     }
 }
 
@@ -110,11 +116,11 @@ sup {
 }
 
 @media (min-width: 1000px) { 
-    header p {
+    .smol p {
         font-size: 1vw;
         line-height: 1.25;
     }
-    header a {
+    .smol a {
         font-size: 1vw;
         line-height: 1.25;
     }
@@ -128,6 +134,9 @@ sup {
         font-size: 4vw;
         line-height: 1.5;
     }
+    .home-text a {
+        font-size: 4vw;
+    }
     .project-details p {
         padding: 2rem 0;
     }
@@ -135,6 +144,7 @@ sup {
         font-size: 3vw;
     }
 }
+        
 
 /*-------------------------------------------*/
  /* Special ✅ */
@@ -154,7 +164,7 @@ sup {
  }
 .tag {
     font-family: Work Sans;
-    font-size: 1vw;
+    font-size: 1.25vw;
     line-height: 1.75;
     font-weight: 400;
     list-style: none;
@@ -163,6 +173,15 @@ sup {
 .caption {
     text-transform: none;
     color: #999;
+}
+.caption a{
+    text-transform: none;
+    color: #999;
+    font-size: 1.25vw;
+    line-height: 1.75;
+}
+.caption a:hover{
+    text-decoration: underline;
 }
 .big-link {
     font-size: 2vw;
@@ -176,6 +195,9 @@ sup {
     .big-link {
         font-size: 5vw;
      }
+     .caption a{
+        font-size: 3.25vw;
+    }
  }
 
 
@@ -219,7 +241,7 @@ nav a:hover {
 }
 .index-li {
     font-family: Work Sans;
-    font-size: var(--size-1-2);
+    font-size: 1.75vw;
     font-weight: 400;
     color: #1a1a1a;
     line-height: 2;
@@ -235,6 +257,16 @@ nav a:hover {
     color: #1a1a1a;
     text-decoration: underline;
 }
+@media (max-width: 1000px) { 
+    .index-li {
+        font-size: 4.5vw;
+        line-height: 1.75;
+    }
+    .index li::before {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+ }
 
 /*Home */
 .home-landing h1 {
@@ -286,7 +318,7 @@ ul.skills:last-of-type{
 }
 .info-list li {
     font-family: Work Sans;
-    font-size: var(--size-1-3);
+    font-size: 1.75vw;
     line-height: 1.5;
     font-weight: 400;
     color: #1a1a1a;
@@ -297,10 +329,34 @@ ul.skills:last-of-type{
  .skills li {
     flex-direction: row;
  }
+ @media (max-width: 1000px) {
+    .info-list li {
+        font-size: 4.5vw;
+        flex-direction: column;
+        padding: 2rem 0rem;
+     }
+    .skills li {
+        flex-direction: row;
+        padding: 2rem 0;
+        }
+    .info-list .short-row {
+        font-style: italic;
+    }
+    ul.skills:first-of-type{
+        margin-right: 0rem;
+        }
+    ul.skills:last-of-type{
+        margin-left: 0rem;
+        }
+    ul.skills {
+        margin: 0;
+    }
+    }
+    
 
 /* Project Page ✅ */
 .meta {
-    font-size: var(--size-1-5);
+    font-size: 1vw;
 }
 .project-meta ul {
     padding-inline-start: 0px;
@@ -317,51 +373,15 @@ ul.skills:last-of-type{
     text-decoration: underline;
 }
 
-/*-------------------------------------------*/
-/*Responsive*/
-@media (max-width: 1000px) {
-.about-list li {
-    flex-direction: column;
-    padding: 1rem 0;
+@media (max-width: 1000px) { 
+    .project-meta ul {
+        display: flex;
+        }
+    .project-meta li {
+        padding-right: 1rem;
+        }
+    .meta {
+        font-size: 3vw;
     }
-.project-meta ul {
-    display: flex;
-    }
-.project-meta li {
-    padding-right: 1rem;
-    }
-.meta {
-    font-size: var(--size-1-3);
-}
-button {
-    font-size: var(--size-1-3);
-}
-.index-li {
-    line-height: 2;
-}
-.index li::before {
-    padding-right: .5rem;
-    padding-left: .5rem;
-}
-.info-list li {
-    flex-direction: column;
-    padding: 1rem 0rem;
- }
-.skills li {
-    flex-direction: row;
-    padding: 1rem 0;
-    }
-.info-list .short-row {
-    font-style: italic;
-}
-ul.skills:first-of-type{
-    margin-right: 0rem;
-    }
-ul.skills:last-of-type{
-    margin-left: 0rem;
-    }
-ul.skills {
-    margin: 0;
 }
 
-}

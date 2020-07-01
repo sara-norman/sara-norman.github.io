@@ -47,6 +47,7 @@ header{
 }
 .long-row {
     width: 66.66%;
+    padding-right: 0;
 }
 
 /*Objects*/
@@ -96,19 +97,19 @@ picture {
     .mobile {
         flex-direction: column;
      }
+     .fullscreen {
+        max-width: 100%;
     }
-@media (max-width: 674px) {
-.long-row {
-    flex-direction: column;
-}
- .none {
-        border-bottom: none;
+    .mobile {
+        flex-direction: column;
+     }
+     picture{ 
+         max-width: 100%;
+     }
+     .long-row {
+        flex-direction: column;
     }
-}@media (max-width: 1000px) {
-.mobile {
-    flex-direction: column;
- }
- picture{ 
-     max-width: 100%;
- }
-}
+     .none {
+            border-bottom: none;
+        }
+    }

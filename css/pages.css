@@ -107,34 +107,33 @@
 }
 
 /* Home Page Responsive */
-@media (max-width: 1042px) {
-    .project-content {
-            flex-direction: column;
-        }
-    .more picture {
-        display: none;
-        }
-    .special picture {
-        display: inherit;
-        }
-    .special picture {
-        padding-bottom: .5rem;
-        }
-    .project-details {
-            margin-right: 0;
-            width: 100%;
-        }
-    .project-details picture {
-            padding-top: 2rem;
-        }
-    .more {
-            margin-left: 0;
-            width: 100%;
-            margin-top: 1rem;
-        }
-    }
 
 @media (max-width: 1000px) {
+.project-content {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+.more picture {
+    display: none;
+    }
+.special picture {
+    display: inherit;
+    }
+.special picture {
+    padding-bottom: .5rem;
+    }
+.project-details {
+        margin-right: 0;
+        width: 100%;
+    }
+.project-details picture {
+        padding-top: 2rem;
+    }
+.more {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 1rem;
+    }
     .project-nav { 
         height: 6rem;
     }
@@ -155,9 +154,6 @@
         width: 100%;
         text-align: left;
         margin-top: 1rem;
-    }
-    .project-content {
-        margin-bottom: 3rem;
     }
     .home-text-right {
         display: flex;
@@ -293,12 +289,21 @@
     mix-blend-mode: multiply;
 }
 .headshot {
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 6rem;
+    z-index: -1;
+    mix-blend-mode: screen;
+}
+.headshot-2 {
     width: 100%;
     position: relative;
     left: 0px;
     top: 0px;
     z-index: -1;
     mix-blend-mode: multiply;
+    padding-top: 4rem;
 }
 .landing-contact {
     background-image: linear-gradient(
@@ -314,7 +319,7 @@
 }
 .landing-text {
     flex-direction: column;
-    padding-left: 3em;
+    margin-left: 33.33%;
 }
 .landing-buttons{
     display: flex;
@@ -371,6 +376,9 @@
 }
 
 @media (max-width: 1000px) {
+ .landing-text {
+    margin-left: 0%;
+    }
  .contact-landing {
     margin-top: 2em;
      padding-left: 0em;
@@ -396,9 +404,6 @@
     }
 .info-list {
         flex-direction: column;
-    }
-.landing-text {
-        padding-left: 0em;
     }
 }
 @media (max-width: 675px) {
