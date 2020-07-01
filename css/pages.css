@@ -138,7 +138,7 @@
         height: 6rem;
     }
     .home-text {
-        height: 50vh;
+        height: 55vh;
         padding: 10rem 50px
     }
     .home-text-left {
@@ -149,6 +149,7 @@
     }    
     .home-text-bottom-right {
         width: 100%;
+        padding-bottom: 2rem;
     }
     .home-text-bottom-work {
         width: 100%;
@@ -202,7 +203,7 @@
     position: relative;
     z-index: 100;
     background-color: white;
-    margin-top: 75vh;
+    margin-top: 80vh;
     padding: 3rem 0;
 }
 .text {

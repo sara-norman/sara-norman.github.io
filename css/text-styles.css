@@ -43,7 +43,7 @@ h3 {
 h4 {
     font-family: Queens;
     font-size: 4vw;
-    line-height: 1.15;
+    line-height: 1;
     font-weight: 400;
     color: #1a1a1a;
     margin-block-start: 1.75rem;
@@ -60,10 +60,10 @@ h5 {
 }
 @media (max-width: 1000px) { 
     h1 {
-        font-size: 9vw;
+        font-size: 8.75vw;
     }
     h2 {
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
     h3 {
         font-size: 4.5vw;
@@ -72,7 +72,8 @@ h5 {
         font-size: 12vw;
     }
     h5 {
-        font-size: 4.5vw;
+        font-size: 5vw;
+        padding-bottom: 1rem;
     }
 }
 
@@ -114,28 +115,18 @@ sup {
 .footer-bottom a {
     font-size: 1.5vw;
 }
-
-@media (min-width: 1000px) { 
-    .smol p {
-        font-size: 1vw;
-        line-height: 1.25;
-    }
-    .smol a {
-        font-size: 1vw;
-        line-height: 1.25;
-    }
-}
 @media (max-width: 1000px) { 
     p {
-        font-size: 4vw;
+        font-size: 4.5vw;
         line-height: 1.5;
     }
     a {
-        font-size: 4vw;
+        font-size: 4.5vw;
         line-height: 1.5;
     }
     .home-text a {
         font-size: 4vw;
+        font-weight: 500;
     }
     .project-details p {
         padding: 2rem 0;
@@ -143,7 +134,21 @@ sup {
     .footer-bottom a {
         font-size: 3vw;
     }
+    .smol {
+        font-size: 3.25vw;
+        line-height: 1.5;
+    }
+    .project-nav a{
+        font-size: 3.5vw;
+    }
+    .project-nav p{
+        font-size: 3.5vw;
+    }
+    .footer-bottom a {
+        font-size: 4.5vw;
+    }
 }
+
         
 
 /*-------------------------------------------*/
@@ -302,6 +307,10 @@ nav a:hover {
     .home-landing h1 {
         font-size: 9vw;
     }
+    .project-content ul {
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
 }
 
 
@@ -330,6 +339,10 @@ ul.skills:last-of-type{
     flex-direction: row;
  }
  @media (max-width: 1000px) {
+     .landing-text a{
+         font-weight: 500;
+         padding-top: 1rem;
+     }
     .info-list li {
         font-size: 4.5vw;
         flex-direction: column;
@@ -382,6 +395,12 @@ ul.skills:last-of-type{
         }
     .meta {
         font-size: 3vw;
+    }
+    .project-description h2{
+        margin-block-start: 0;
+    }
+    .project-description a{
+        font-weight: 500;
     }
 }
 
