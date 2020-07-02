@@ -11,7 +11,7 @@
 }
 .home-text {
     padding: 7em 50px;
-    height: 65vh;
+    height: 70vh;
     background-color: var(--random-color);
 }
 .home-text-left {
@@ -302,8 +302,7 @@
 .headshot-2 {
     width: 100%;
     position: relative;
-    left: 0px;
-    top: -16rem;
+    padding-top: 2rem;
     z-index: -1;
     mix-blend-mode: screen;
 }
@@ -329,10 +328,10 @@
     display: flex;
     margin-top: 2rem;
 }
-.landing-buttons button:first-of-type {
+.landing-buttons .button:first-of-type {
     margin-right: 1rem;
 }
-.landing-buttons button:last-of-type{
+.landing-buttons .button:last-of-type{
     margin-left: 1rem;
 }
 
@@ -392,12 +391,12 @@
 .landing-buttons {
         flex-direction: column;
     }
-.landing-buttons button:first-of-type {
+.landing-buttons .button:first-of-type {
         margin-right: 0rem;
         width: 100%;
         margin: 0.5rem 0;
     }
-.landing-buttons button:last-of-type{
+.landing-buttons .button:last-of-type{
         margin-left: 0rem;
         width: 100%;
         margin: 0.5rem 0;
