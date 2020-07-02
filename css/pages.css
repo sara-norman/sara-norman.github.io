@@ -248,6 +248,9 @@
 
 /* Project Page Responsive */
 @media (max-width: 1000px) { 
+    .case-study {
+        margin-top: 90vh;
+    }
     .project-landing {
         padding: 10rem 50px;
         flex-direction: column;
