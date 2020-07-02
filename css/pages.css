@@ -384,6 +384,9 @@
 .headshot {
         display: none;
     }
+.contact-about {
+    margin-top: 80vh;
+    }
 .contact-page {
         background-color: var(--random-color);
     }
