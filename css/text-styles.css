@@ -357,6 +357,9 @@ ul.skills:last-of-type{
     ul.skills {
         margin: 0;
     }
+    .bold a{
+        font-weight: 500;
+    }
     }
     
 
