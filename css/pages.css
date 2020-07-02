@@ -249,7 +249,7 @@
 /* Project Page Responsive */
 @media (max-width: 1000px) { 
     .case-study {
-        margin-top: 90vh;
+        margin-top: 85vh;
     }
     .project-landing {
         padding: 10rem 50px;
@@ -369,11 +369,8 @@
 @media (max-width: 1000px) {
 .landing-contact {
     padding: 10rem 50px;
-    background-image: linear-gradient(
-        var(--random-color) 0vh 85vh,
-        transparent 85% 100%
-      );
-    }   
+    background-image: var(--random-color); 
+}
  .landing-text {
     margin-left: 0%;
     }
@@ -385,7 +382,7 @@
         display: none;
     }
 .contact-about {
-    margin-top: 80vh;
+    margin-top: 75vh;
     }
 .contact-page {
         background-color: var(--random-color);
