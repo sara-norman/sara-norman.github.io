@@ -311,7 +311,6 @@
     padding: 7rem 50px;
     margin: auto;
     top: 0;
-
 }
 .landing-text {
     flex-direction: column;
@@ -367,6 +366,10 @@
 @media (max-width: 1000px) {
 .landing-contact {
     padding: 10rem 50px;
+    background-image: linear-gradient(
+        var(--random-color) 0vh 85vh,
+        transparent 85% 100%
+      );
     }   
  .landing-text {
     margin-left: 0%;
