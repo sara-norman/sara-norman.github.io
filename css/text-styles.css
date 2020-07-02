@@ -129,10 +129,6 @@ sup {
     .footer-bottom a {
         font-size: 3vw;
     }
-    .smol {
-        font-size: 3.25vw;
-        line-height: 1.5;
-    }
     .project-nav a{
         font-size: 3.5vw;
     }
@@ -294,6 +290,12 @@ nav a:hover {
 .columns h4 {
     margin-block-end: 0.5rem;
 }
+.columns a{
+    font-size: 1.25vw;
+}
+.columns p{
+    font-size: 1.25vw;
+}
 @media (max-width: 1000px) { 
     .home-landing h1 {
         font-size: 12vw;
@@ -331,10 +333,6 @@ ul.skills:last-of-type{
     flex-direction: row;
  }
  @media (max-width: 1000px) {
-     .landing-text a{
-         font-weight: 500;
-         padding-top: 1rem;
-     }
     .info-list li {
         font-size: 4.5vw;
         flex-direction: column;
