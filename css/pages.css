@@ -299,13 +299,6 @@
     z-index: -1;
     mix-blend-mode: screen;
 }
-.headshot-2 {
-    width: 100%;
-    position: relative;
-    padding-top: 2rem;
-    z-index: -1;
-    mix-blend-mode: screen;
-}
 .landing-contact {
     background-image: linear-gradient(
         var(--random-color) 0vh 75vh,
@@ -395,6 +388,7 @@
         margin-right: 0rem;
         width: 100%;
         margin: 0.5rem 0;
+        padding-bottom: 2rem;
     }
 .landing-buttons .button:last-of-type{
         margin-left: 0rem;

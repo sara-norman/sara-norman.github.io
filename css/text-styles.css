@@ -333,6 +333,9 @@ ul.skills:last-of-type{
     flex-direction: row;
  }
  @media (max-width: 1000px) {
+    .landing-text h1{
+         padding-bottom: 3rem;
+     }
     .info-list li {
         font-size: 4.5vw;
         flex-direction: column;
