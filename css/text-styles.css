@@ -263,7 +263,7 @@ nav a:hover {
 /*Home */
 .home-landing h1 {
     font-family: Work Sans;
-    font-size: 5vw;
+    font-size: 7vw;
     line-height: 1.15;
     font-weight: 400;
     color: #1a1a1a;
@@ -332,9 +332,13 @@ ul.skills:last-of-type{
  .skills li {
     flex-direction: row;
  }
+ .multiply {
+     mix-blend-mode: multiply;
+     padding-top: 0.5rem;
+ }
  @media (max-width: 1000px) {
     .landing-text h1{
-         padding-bottom: 3rem;
+         padding-bottom: 2rem;
      }
     .info-list li {
         font-size: 4.5vw;
