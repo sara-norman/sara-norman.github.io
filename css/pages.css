@@ -369,7 +369,8 @@
 @media (max-width: 1000px) {
 .landing-contact {
     padding: 10rem 50px;
-    background-image: var(--random-color); 
+    background-image: none;
+    background-color: var(--random-color);
 }
  .landing-text {
     margin-left: 0%;
