@@ -408,6 +408,7 @@
 .info-row {
     flex-direction: column;
     margin-bottom: 2rem;
+    margin-top: 4rem;
 }
 #about {
     padding-top: 96px;
