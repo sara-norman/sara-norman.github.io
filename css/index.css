@@ -69,6 +69,11 @@ picture {
 .fullscreen {
     max-width: 95%;
 }
+hr {
+    max-width: 95%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
 /*Responsive*/
 @media (max-width: 1000px) {
