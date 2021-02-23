@@ -220,6 +220,12 @@
     margin: auto;
     margin-top: 1rem;
 }
+.four-space-right {
+    padding-right: 24px;
+}
+.four-space-left {
+    padding-left: 24px;
+}
 .image-row-stacked {
     display: flex;
     align-items: center;
