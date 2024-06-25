@@ -187,7 +187,7 @@
     padding: 7rem;
     margin: auto;
     z-index: 0;
-    height: 90%;
+    height: 100%;
     position: fixed;
     background-color: var(--random-color);
     top: 0;
