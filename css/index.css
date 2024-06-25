@@ -65,9 +65,12 @@ picture {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 3rem;
 }
 .fullscreen {
     max-width: 95%;
+    padding-bottom: 3rem;
+    display: block;
 }
 hr {
     max-width: 95%;

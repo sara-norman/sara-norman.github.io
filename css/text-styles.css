@@ -212,7 +212,7 @@ li {
 /*-------------------------------------------*/
 /*PAGE SPECIFIC*/
 /* Navigation */
-nav li:first-of-type {
+nav li {
     padding-right: 2rem;
  }
 nav a:hover {
