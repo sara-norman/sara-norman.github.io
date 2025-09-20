@@ -84,11 +84,11 @@
     display: flex;
     padding: 2rem 50px;
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 .project-details {
     width: 50vw;
-    margin-right: 1.5rem;
+    margin-right: 3rem;
 }
 .hide {
     display: none;
